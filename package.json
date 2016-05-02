@@ -1,0 +1,39 @@
+{
+  "name": "compo",
+  "version": "0.0.1",
+  "description": "A library for page composition pattern in microservice architecture",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "node-horseman": "^3.0.1",
+    "phantomjs": "^2.1.7"
+  },
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb-base": "^2.0.0",
+    "eslint-plugin-import": "^1.6.1",
+    "jest-cli": "^12.0.2"
+  },
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengl/compo.git"
+  },
+  "author": "Zheng Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhengl/compo/issues"
+  },
+  "homepage": "https://github.com/zhengl/compo#readme",
+  "jest": {
+    "unmockedModulePathPatterns": [
+      "cheerio",
+      "node-horseman",
+      "nock"
+    ]
+  }
+}
